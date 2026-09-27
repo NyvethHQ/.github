@@ -1,0 +1,31 @@
+name: Documentation Issue
+description: Report a typo, missing guide, or incorrect documentation
+title: "[DOCS]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve our documentation.
+  - type: textarea
+    id: page
+    attributes:
+      label: Documentation Page / URL
+      description: Where is the missing or incorrect documentation located?
+      placeholder: "e.g. README.md, getting-started section"
+    validations:
+      required: true
+  - type: textarea
+    id: issue-details
+    attributes:
+      label: Issue Description
+      description: What is currently incorrect, missing, or unclear?
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      label: Suggested Fix or Improvement
+      description: How should this documentation be updated?
+    validations:
+      required: false
